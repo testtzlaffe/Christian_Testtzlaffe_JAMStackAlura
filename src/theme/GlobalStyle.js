@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${({ theme }) => theme.fontFamily};
+    
   }
 
   h1, h2, h3, h4, h5, h6, p {
@@ -21,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     display: flex;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     width: 100%;
   }
 
