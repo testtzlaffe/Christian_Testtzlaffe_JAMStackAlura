@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CapaWrapper = styled.section`
-  height: 100vh;
+  height: 100%;
   height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
