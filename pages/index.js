@@ -1,10 +1,15 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import { Cabecalho } from '../src/components/Cabecalho';
+import { Capa } from '../src/components/Capa';
+import { Rodape } from '../src/components/Rodape';
+import { WrapperProjetos } from '../src/components/WrapperProjetos';
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Capa />
+      <Cabecalho />
+      <WrapperProjetos />
+      <Rodape />
+    </>
+  );
 }
