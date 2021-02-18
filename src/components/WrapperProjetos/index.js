@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   align-items: center;
   ${breakpointsMedia({
     xs: css`
-      padding: 24px 0;
+      padding: 34px 0;
     `,
     md: css`
       padding: 36px 0;

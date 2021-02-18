@@ -1,15 +1,31 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 import { Text } from '../../../Text';
 
 const CardImage = styled.div`
-  height: 390px;
-  width: 287px;
+  height: 250px;
+  ${breakpointsMedia({
+    xs: css`
+      width: 100%;
+    `,
+    md: css`
+      width: 287px;
+    `,
+  })}
   background-color: #ccc;
 `;
 
 const CardText = styled.div`
-  height: 120px;
-  width: 287px;
+  height: 80px;
+
+  ${breakpointsMedia({
+    xs: css`
+      width: 100%;
+    `,
+    md: css`
+      width: 287px;
+    `,
+  })}
   margin-right: 18px;
   background-color: #ddd;
   display: flex;
