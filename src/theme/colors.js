@@ -1,10 +1,14 @@
 export const colors = {
   background: {
     light: {
-      color: '#FFFFFF',
+      color: '#222',
     },
     main: {
-      color: '#F2F2F2',
+      color: '#111',
+      contrastText: '#e1e1e1',
+    },
+    hover: {
+      contrastText: '#512CA8',
     },
   },
   borders: {
@@ -14,7 +18,7 @@ export const colors = {
   },
   primary: {
     main: {
-      color: '#E9C46A',
+      color: '#512CA8',
       contrastText: '#ffffff',
     },
   },

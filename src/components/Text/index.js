@@ -22,6 +22,8 @@ const TextBase = styled.span`
   }}
 
   ${propToStyle('margin')}
+  ${propToStyle('marginLeft')}
+  ${propToStyle('marginTop')}
 `;
 
 export const Text = ({ tag, variant, children, ...props }) => {

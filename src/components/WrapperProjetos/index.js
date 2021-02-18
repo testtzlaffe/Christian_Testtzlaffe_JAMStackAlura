@@ -9,10 +9,10 @@ const Wrapper = styled.section`
   align-items: center;
   ${breakpointsMedia({
     xs: css`
-      padding: 32px 0;
+      padding: 24px 0;
     `,
     md: css`
-      padding: 64px 0;
+      padding: 36px 0;
     `,
   })}
 `;
@@ -20,7 +20,7 @@ const Wrapper = styled.section`
 export const WrapperProjetos = () => {
   return (
     <Wrapper>
-      <SectionTitle />
+      {/* <SectionTitle /> */}
       <Cards />
     </Wrapper>
   );

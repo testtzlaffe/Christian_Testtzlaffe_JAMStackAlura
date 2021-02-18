@@ -12,7 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${({ theme }) => theme.fontFamily};
-    
+    background-color: ${({ theme }) => theme.colors.background.light.color};
+    color: ${({ theme }) => theme.colors.background.main.contrastText}
   }
 
   h1, h2, h3, h4, h5, h6, p {

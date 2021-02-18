@@ -1,20 +1,26 @@
 export const typographyVariants = {
   title: {
-    fontSize: '90px',
+    fontSize: '36px',
     fontWeight: '400',
     lineHeight: '108px',
   },
 
   titleXS: {
-    fontSize: '64px',
+    fontSize: '40px',
     fontWeight: '400',
-    lineHeight: '78px',
+    lineHeight: '88px',
   },
 
   subTitle: {
-    fontSize: '48px',
+    fontSize: '80px',
+    fontWeight: '400',
+    lineHeight: '88px',
+  },
+
+  subTitle2: {
+    fontSize: '24px',
     fontWeight: '300',
-    lineHeight: '58px',
+    lineHeight: '40px',
   },
 
   sectionTitle: {
@@ -30,7 +36,7 @@ export const typographyVariants = {
   },
 
   paragraph1: {
-    fontSize: '28px',
+    fontSize: '24px',
     fontWeight: '400',
     lineHeight: '34px',
   },
@@ -42,9 +48,15 @@ export const typographyVariants = {
   },
 
   paragraph2: {
-    fontSize: '14px',
-    fontWeight: '400',
-    lineHeight: 1.25,
+    fontSize: '32px',
+    fontWeight: '700',
+    lineHeight: '38px',
+  },
+
+  paragraph2XS: {
+    fontSize: '24px',
+    fontWeight: '700',
+    lineHeight: '29px',
   },
 
   smallestException: {

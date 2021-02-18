@@ -2,11 +2,12 @@ import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const CabecalhoWrapper = styled.header`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.secondary.main.color};
-  border-top: 2px solid ${({ theme }) => theme.colors.primary.main.color};
+  padding: 20px;
+
+  background-color: ${({ theme }) => theme.colors.background.light.color};
+
+  /* border-bottom: 2px solid ${({ theme }) =>
+    theme.colors.primary.main.color}; */
   ${breakpointsMedia({
     xs: css`
       height: 40px;
@@ -15,4 +16,12 @@ export const CabecalhoWrapper = styled.header`
       height: 67px;
     `,
   })}
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 `;

@@ -10,8 +10,13 @@ const NavbarWrapper = styled.nav``;
 
 const NavbarItem = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.secondary.main.contrastText};
+  color: ${({ theme }) => theme.colors.background.main.contrastText};
   margin-right: 38px;
+  transition: ${({ theme }) => theme.transition};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.background.hover.contrastText};
+  }
 `;
 
 export const Navbar = () => {

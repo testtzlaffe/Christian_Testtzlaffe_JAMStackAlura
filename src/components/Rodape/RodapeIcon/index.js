@@ -6,7 +6,6 @@ const WrapperRodapeIcon = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* width: 120px; */
   padding: 0 24px;
   background-color: ${({ theme }) => theme.colors.primary.main.color};
   color: ${({ theme }) => theme.colors.primary.main.contrastText};
