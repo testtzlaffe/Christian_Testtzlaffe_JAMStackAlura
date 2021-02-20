@@ -11,21 +11,29 @@ export const Capa = () => {
       <Text tag="h1" variant={{ xs: 'titleXS', md: 'title' }}>
         Olá, sou Testtzlaffe
       </Text>
-      <Text tag="h2" variant="subTitle">
+      <Text tag="h2" variant={{ xs: 'subTitleXS', md: 'subTitle' }}>
         Desenvolvimento Web
       </Text>
-      <Text tag="h2" variant="subTitle2" marginTop="40px">
-        Contador e estudante de programação.<br></br>Atualmente aprendendo
-        React, Next.js e Node.js.
+      <Text
+        tag="h2"
+        variant={{ xs: 'subTitle2XS', md: 'subTitle2' }}
+        marginTop={{ md: '40px' }}
+      >
+        Contador e estudante de programação. Atualmente aprendendo React,
+        Next.js e Node.js.
       </Text>
 
-      <Button variant="primary.main" padding="14px 40px" marginTop="40px">
+      <Button
+        variant="primary.main"
+        padding={{ md: '14px 40px' }}
+        marginTop="40px"
+      >
         <ButtonLink
           href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Text tag="span" variant="subTitle2">
+          <Text tag="span" variant={{ xs: 'subTitle2XS', md: 'subTitle2' }}>
             ENTRE EM CONTATO
           </Text>
         </ButtonLink>

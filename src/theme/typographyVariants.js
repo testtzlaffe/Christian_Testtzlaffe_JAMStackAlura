@@ -6,21 +6,33 @@ export const typographyVariants = {
   },
 
   titleXS: {
-    fontSize: '20px',
+    fontSize: '16px',
     fontWeight: '400',
     lineHeight: '88px',
   },
 
   subTitle: {
-    fontSize: '60px',
+    fontSize: '80px',
+    fontWeight: '400',
+    lineHeight: '88px',
+  },
+
+  subTitleXS: {
+    fontSize: '24px',
     fontWeight: '400',
     lineHeight: '88px',
   },
 
   subTitle2: {
-    fontSize: '28px',
+    fontSize: '24px',
     fontWeight: '300',
     lineHeight: '40px',
+  },
+
+  subTitle2XS: {
+    fontSize: '16px',
+    fontWeight: '300',
+    lineHeight: '32px',
   },
 
   sectionTitle: {
@@ -42,7 +54,7 @@ export const typographyVariants = {
   },
 
   paragraph1XS: {
-    fontSize: '20px',
+    fontSize: '16px',
     fontWeight: '400',
     lineHeight: '22px',
   },

@@ -1,8 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const Foto = styled.img`
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: black;
+  ${breakpointsMedia({
+    xs: css`
+      width: 80px;
+      height: 80px;
+    `,
+    md: css`
+      width: 120px;
+      height: 120px;
+    `,
+  })}
 `;

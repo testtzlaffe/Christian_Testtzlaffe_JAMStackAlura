@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const CapaWrapper = styled.section`
   display: flex;
@@ -6,5 +7,12 @@ export const CapaWrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 60px;
+  ${breakpointsMedia({
+    xs: css`
+      padding-top: 10px;
+    `,
+    md: css`
+      padding-top: 40px;
+    `,
+  })}
 `;

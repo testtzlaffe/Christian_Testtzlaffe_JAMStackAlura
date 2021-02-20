@@ -1,9 +1,17 @@
-import styled from 'styled-components';
-import { FaLinkedin } from 'react-icons/fa';
-import { Text } from '../../Text';
+import styled, { css } from 'styled-components';
+import { FaGithubAlt } from 'react-icons/fa';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const LogoText = styled.a`
   display: flex;
+  ${breakpointsMedia({
+    xs: css`
+      font-size: 32px;
+    `,
+    md: css`
+      font-size: 50px;
+    `,
+  })}
   align-items: center;
   text-decoration: none;
   cursor: pointer;
@@ -18,18 +26,8 @@ export const LogoText = styled.a`
 
 export const Logo = () => {
   return (
-    <LogoText
-      href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/"
-      target="_blank"
-    >
-      <FaLinkedin size={50} />
-      {/* <Text
-        tag="span"
-        variant={{ xs: 'paragraph1XS', md: 'paragraph1' }}
-        marginLeft="16px"
-      >
-        testtzlaffe
-      </Text> */}
+    <LogoText href="https://github.com/testtzlaffe" target="_blank">
+      <FaGithubAlt />
     </LogoText>
   );
 };

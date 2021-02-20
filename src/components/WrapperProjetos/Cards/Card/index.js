@@ -51,9 +51,9 @@ CardBase.Tag = styled.div`
 export const Card = ({ name, tags, img, ...props }) => {
   return (
     <CardBase {...props}>
-      {/* <CardBase.Header>
+      <CardBase.Header>
         <CardBase.Image src={img} />
-      </CardBase.Header> */}
+      </CardBase.Header>
       <CardBase.Body>
         <CardBase.Title>
           <Text tag="p" variant="paragraph1">

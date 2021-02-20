@@ -8,7 +8,7 @@ export const colors = {
       contrastText: '#e1e1e1',
     },
     hover: {
-      contrastText: '#ff6d00',
+      contrastText: '#ff9e40',
     },
   },
   borders: {

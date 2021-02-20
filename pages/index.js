@@ -11,7 +11,7 @@ export default function Home() {
 
       <Container>
         <Capa />
-        {/* <WrapperProjetos /> */}
+        <WrapperProjetos />
       </Container>
       <Rodape />
     </>
