@@ -25,8 +25,8 @@ export const Capa = () => {
 
       <Button
         variant="primary.main"
-        padding={{ md: '14px 40px' }}
-        marginTop="40px"
+        padding={{ xs: '10px 32px', md: '10px 40px' }}
+        marginTop={{ xs: '32px', md: '40px' }}
       >
         <ButtonLink
           href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/"

@@ -23,14 +23,30 @@ const CardBase = styled.a`
 `;
 
 CardBase.Header = styled.div`
-  height: 180px;
+  ${breakpointsMedia({
+    xs: css`
+      height: 200px;
+    `,
+    md: css`
+      height: 180px;
+    `,
+  })}
 `;
 
 CardBase.Image = styled.img`
-  object-fit: cover;
+  object-fit: inherit;
   border-radius: ${borderRadiusCard} ${borderRadiusCard} 0 0;
-  height: 180px;
-  width: 320px;
+
+  ${breakpointsMedia({
+    xs: css`
+      width: 100%;
+      height: 200px;
+    `,
+    md: css`
+      height: 180px;
+      width: 320px;
+    `,
+  })}
 `;
 
 CardBase.Body = styled.div`
