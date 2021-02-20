@@ -62,7 +62,7 @@ export const Card = ({ name, tags, img, ...props }) => {
         </CardBase.Title>
         <CardBase.Tags>
           {tags.map((tag) => (
-            <CardBase.Tag>
+            <CardBase.Tag key={`${name}-${tag}`}>
               <Text>{tag}</Text>
             </CardBase.Tag>
           ))}
