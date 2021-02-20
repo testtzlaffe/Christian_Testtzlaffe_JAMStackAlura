@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { Icon } from './Icon';
 
-const WrapperRodapeIcon = styled.div`
+const WrapperFooterIcon = styled.div`
   display: flex;
   align-items: center;
 `;
 
-export const RodapeIcon = () => {
+export const FooterIcon = () => {
   return (
-    <WrapperRodapeIcon>
+    <WrapperFooterIcon>
       <Icon
         href="https://www.linkedin.com/in/christian-testtzlaffe-alpoim/"
         target="_blank"
@@ -19,6 +19,6 @@ export const RodapeIcon = () => {
       <Icon href="https://github.com/testtzlaffe" target="_blank">
         <FaGithubSquare />
       </Icon>
-    </WrapperRodapeIcon>
+    </WrapperFooterIcon>
   );
 };

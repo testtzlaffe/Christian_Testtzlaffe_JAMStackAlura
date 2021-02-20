@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
-import { Text } from '../../../Text';
+import { Text } from '../../../commons/Text';
 import { theme } from '../../../../theme';
 
 const borderRadiusCard = theme.borderRadiusCard;

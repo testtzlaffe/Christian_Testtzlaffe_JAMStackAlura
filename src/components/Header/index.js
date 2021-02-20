@@ -1,14 +1,14 @@
 import { Logo } from './Logo';
 import { Navbar } from './Navbar';
-import { CabecalhoWrapper, HeaderContainer } from './styles/CabecalhoWrapper';
+import { HeaderWrapper, HeaderContainer } from './styles/HeaderWrapper';
 
-export const Cabecalho = () => {
+export const Header = () => {
   return (
-    <CabecalhoWrapper>
+    <HeaderWrapper>
       <HeaderContainer>
         <Logo />
         <Navbar />
       </HeaderContainer>
-    </CabecalhoWrapper>
+    </HeaderWrapper>
   );
 };

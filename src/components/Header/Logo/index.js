@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { FaGithubAlt } from 'react-icons/fa';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
-import { Text } from '../../Text';
+import { Text } from '../../commons/Text';
 
 export const LogoText = styled.a`
   display: flex;

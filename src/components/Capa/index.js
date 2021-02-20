@@ -1,5 +1,5 @@
 import { Button } from '../commons/Button';
-import { Text } from '../Text';
+import { Text } from '../commons/Text';
 import { ButtonLink } from './styles/ButtonLink';
 import { CapaWrapper } from './styles/CapaWrapper';
 import { Foto } from './styles/Foto';

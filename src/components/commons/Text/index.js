@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
-import { breakpointsMedia } from '../../theme/utils/breakpointsMedia';
-import { propToStyle } from '../../theme/utils/propToStyle';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const TextBase = styled.span`
   ${({ theme, variant }) => {

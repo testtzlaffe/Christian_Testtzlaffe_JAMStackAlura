@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { RodapeIcon } from './RodapeIcon';
+import { FooterIcon } from './FooterIcon';
 
-const WraperRodape = styled.footer`
+const WraperFooter = styled.footer`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.background.main.color};
 `;
 
-export const Rodape = () => {
+export const Footer = () => {
   return (
-    <WraperRodape>
-      <RodapeIcon />
-    </WraperRodape>
+    <WraperFooter>
+      <FooterIcon />
+    </WraperFooter>
   );
 };

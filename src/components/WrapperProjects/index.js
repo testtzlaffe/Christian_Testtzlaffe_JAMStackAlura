@@ -5,7 +5,7 @@ const Wrapper = styled.section`
   padding: 36px 0;
 `;
 
-export const WrapperProjetos = () => {
+export const WrapperProjects = () => {
   return (
     <Wrapper>
       <Cards />
