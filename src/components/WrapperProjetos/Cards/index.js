@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
-import { Card, CardDestaque } from './Card';
+import { Card } from './Card';
 
-const secondaryProjects = [
+const projects = [
   {
     name: 'NETFENIX',
     url: 'https://github.com/testtzlaffe/netfenix',
@@ -19,15 +19,9 @@ const secondaryProjects = [
   },
 ];
 
-const projectDestaque = {
-  name: 'Projeto 4',
-  imageUrl: '',
-  text: 'Lorem Ipsom',
-};
-
 const WrapperCards = styled.div`
   ${breakpointsMedia({
-    lg: css`
+    md: css`
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -40,21 +34,20 @@ export const Cards = () => {
   return (
     <>
       <WrapperCards>
-        {secondaryProjects.map((project) => {
+        {projects.map((project) => {
+          const { name, url, img, tags } = project;
           return (
             <Card
-              key={project.name}
-              name={project.name}
-              url={project.url}
-              img={project.img}
-              tags={project.tags}
-              href={project.url}
+              key={name}
+              name={name}
+              url={url}
+              img={img}
+              tags={tags}
+              href={url}
             />
           );
         })}
       </WrapperCards>
-
-      {/* <CardDestaque name={projectDestaque.name} /> */}
     </>
   );
 };

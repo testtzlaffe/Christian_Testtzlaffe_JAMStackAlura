@@ -18,14 +18,14 @@ const CardBase = styled.a`
   }
 `;
 
+CardBase.Header = styled.div`
+  height: 220px;
+`;
+
 CardBase.Image = styled.img`
   object-fit: cover;
   height: 220px;
   width: 400px;
-`;
-
-CardBase.Header = styled.div`
-  height: 220px;
 `;
 
 CardBase.Body = styled.div`
