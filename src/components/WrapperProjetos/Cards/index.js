@@ -17,20 +17,6 @@ const secondaryProjects = [
       'https://raw.githubusercontent.com/testtzlaffe/netfenix/master/src/assets/img/netfenix2.png',
     tags: ['React', 'Next.js'],
   },
-  {
-    name: 'PROJETO 3',
-    url: '',
-    img:
-      'https://raw.githubusercontent.com/testtzlaffe/netfenix/master/src/assets/img/netfenix2.png',
-    tags: ['Node.js'],
-  },
-  {
-    name: 'PROJETO 4',
-    url: '',
-    img:
-      'https://raw.githubusercontent.com/testtzlaffe/netfenix/master/src/assets/img/netfenix2.png',
-    tags: ['React', 'Next.js'],
-  },
 ];
 
 const projectDestaque = {

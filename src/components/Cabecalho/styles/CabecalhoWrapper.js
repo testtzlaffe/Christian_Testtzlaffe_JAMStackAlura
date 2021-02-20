@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 export const CabecalhoWrapper = styled.header`
-  padding: 40px;
+  padding: 20px 20px 60px 20px;
 
   background-color: ${({ theme }) => theme.colors.background.light.color};
 

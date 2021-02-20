@@ -13,13 +13,13 @@ export const typographyVariants = {
 
   subTitle: {
     fontSize: '80px',
-    fontWeight: '400',
+    fontWeight: '700',
     lineHeight: '88px',
   },
 
   subTitleXS: {
     fontSize: '24px',
-    fontWeight: '400',
+    fontWeight: '700',
     lineHeight: '88px',
   },
 

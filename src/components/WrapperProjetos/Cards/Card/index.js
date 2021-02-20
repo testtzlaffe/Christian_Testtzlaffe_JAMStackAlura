@@ -4,7 +4,7 @@ import { Text } from '../../../Text';
 
 const CardBase = styled.a`
   text-decoration: none;
-  min-width: 320px;
+  min-width: 400px;
   ${breakpointsMedia({
     md: css`
       max-width: 320px;

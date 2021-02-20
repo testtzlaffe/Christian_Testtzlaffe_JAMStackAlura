@@ -32,10 +32,10 @@ export const Logo = () => {
       <Text
         tag="span"
         variant={{ xs: 'paragraph1XS', md: 'paragraph1' }}
-        marginLeft="20px"
+        marginLeft="12px"
         display={{ xs: 'none', md: 'block' }}
       >
-        testtzlaffe
+        /testtzlaffe
       </Text>
     </LogoText>
   );

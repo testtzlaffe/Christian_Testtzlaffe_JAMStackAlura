@@ -9,10 +9,10 @@ export const CapaWrapper = styled.section`
   text-align: center;
   ${breakpointsMedia({
     xs: css`
-      padding-top: 10px;
+      padding-top: 0;
     `,
     md: css`
-      padding-top: 40px;
+      padding-top: 20px;
     `,
   })}
 `;
