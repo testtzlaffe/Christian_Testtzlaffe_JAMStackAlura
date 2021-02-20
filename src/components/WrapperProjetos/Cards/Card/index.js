@@ -2,75 +2,72 @@ import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 import { Text } from '../../../Text';
 
-const CardImage = styled.div`
-  height: 250px;
+const CardBase = styled.a`
+  text-decoration: none;
+  min-width: 320px;
   ${breakpointsMedia({
-    xs: css`
-      width: 100%;
-    `,
     md: css`
-      width: 287px;
+      max-width: 320px;
     `,
   })}
-  background-color: #ccc;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: ${({ theme }) => theme.transition};
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
-const CardText = styled.div`
-  height: 80px;
-
-  ${breakpointsMedia({
-    xs: css`
-      width: 100%;
-    `,
-    md: css`
-      width: 287px;
-    `,
-  })}
-  margin-right: 18px;
-  background-color: #ddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+CardBase.Image = styled.img`
+  max-width: 100%;
 `;
 
-const CardDestaqueImage = styled.div`
-  height: 320px;
-  width: 593px;
-  background-color: #aaa;
+CardBase.Header = styled.div``;
+
+CardBase.Body = styled.div`
+  background-color: white;
+  padding: 20px;
+  color: ${({ theme }) => theme.colors.background.main.color};
 `;
 
-const CardDestaqueText = styled.div`
-  height: 320px;
-  width: 306px;
-  background-color: #ddd;
+CardBase.Title = styled.div`
+  margin-bottom: 20px;
 `;
 
-const CardDestaqueWrapper = styled.div`
+CardBase.Tags = styled.div`
+  background-color: white;
   display: flex;
 `;
 
-export const Card = ({ name }) => {
-  return (
-    <div>
-      <CardImage />
-      <CardText>
-        <Text tag="p" variant={{ xs: 'paragraph2XS', md: 'paragraph2' }}>
-          {name}
-        </Text>
-      </CardText>
-    </div>
-  );
-};
+CardBase.Tag = styled.div`
+  background-color: ${({ theme }) => theme.colors.primary.light.color};
+  color: ${({ theme }) => theme.colors.primary.main.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadiusButton};
+  padding: 6px 12px;
+  margin-right: 4px;
+`;
 
-export const CardDestaque = ({ name }) => {
+export const Card = ({ name, tags, img, ...props }) => {
   return (
-    <CardDestaqueWrapper>
-      <CardDestaqueImage />
-      <CardDestaqueText>
-        <Text tag="p" variant={{ xs: 'paragraph2XS', md: 'paragraph2' }}>
-          {name}
-        </Text>
-      </CardDestaqueText>
-    </CardDestaqueWrapper>
+    <CardBase {...props}>
+      <CardBase.Header>
+        <CardBase.Image src={img} />
+      </CardBase.Header>
+      <CardBase.Body>
+        <CardBase.Title>
+          <Text tag="p" variant="paragraph1">
+            {name}
+          </Text>
+        </CardBase.Title>
+        <CardBase.Tags>
+          {tags.map((tag) => (
+            <CardBase.Tag>
+              <Text>{tag}</Text>
+            </CardBase.Tag>
+          ))}
+        </CardBase.Tags>
+      </CardBase.Body>
+    </CardBase>
   );
 };

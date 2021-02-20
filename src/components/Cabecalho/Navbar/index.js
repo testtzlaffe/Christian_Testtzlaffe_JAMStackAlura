@@ -12,6 +12,9 @@ const NavbarItem = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.background.main.contrastText};
   margin-right: 38px;
+  &:last-child {
+    margin-right: 0;
+  }
   transition: ${({ theme }) => theme.transition};
 
   &:hover {

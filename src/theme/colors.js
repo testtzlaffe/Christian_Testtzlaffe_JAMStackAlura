@@ -8,7 +8,7 @@ export const colors = {
       contrastText: '#e1e1e1',
     },
     hover: {
-      contrastText: '#512CA8',
+      contrastText: '#ff6d00',
     },
   },
   borders: {
@@ -18,8 +18,11 @@ export const colors = {
   },
   primary: {
     main: {
-      color: '#512CA8',
+      color: '#ff6d00',
       contrastText: '#ffffff',
+    },
+    light: {
+      color: '#ff9e40',
     },
   },
   secondary: {

@@ -4,17 +4,7 @@ import { Cards } from './Cards';
 import { SectionTitle } from './SectionTitle';
 
 const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  ${breakpointsMedia({
-    xs: css`
-      padding: 34px 0;
-    `,
-    md: css`
-      padding: 36px 0;
-    `,
-  })}
+  padding: 36px 0;
 `;
 
 export const WrapperProjetos = () => {

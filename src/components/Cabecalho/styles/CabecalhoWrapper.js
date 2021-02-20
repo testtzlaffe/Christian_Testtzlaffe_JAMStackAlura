@@ -6,8 +6,6 @@ export const CabecalhoWrapper = styled.header`
 
   background-color: ${({ theme }) => theme.colors.background.light.color};
 
-  /* border-bottom: 2px solid ${({ theme }) =>
-    theme.colors.primary.main.color}; */
   ${breakpointsMedia({
     xs: css`
       height: 40px;
