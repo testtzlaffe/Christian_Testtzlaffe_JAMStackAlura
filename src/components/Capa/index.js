@@ -20,7 +20,8 @@ export const Capa = () => {
       </Text>
       <Text tag="h3" variant={{ xs: 'subTitle2XS', md: 'subTitle2' }}>
         Formado em Ciências Contábeis pela UFES, me apaixonando pela
-        programação. Atualmente aprendendo React, Next.js e Node.js.
+        programação. Atualmente aprendendo React, Next.js, Node.js e Ciência de
+        Dados.
       </Text>
 
       <Button
