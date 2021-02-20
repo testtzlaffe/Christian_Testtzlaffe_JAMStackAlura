@@ -45,6 +45,7 @@ export const Cards = () => {
               img={img}
               tags={tags}
               href={url}
+              target="_blank"
             />
           );
         })}
