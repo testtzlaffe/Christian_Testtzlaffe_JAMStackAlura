@@ -23,11 +23,12 @@ export const colors = {
     },
     light: {
       color: '#ff9e40',
+      contrastText: '#111',
     },
   },
   secondary: {
     main: {
-      color: '#444',
+      color: '#333',
       contrastText: '#e1e1e1',
     },
   },

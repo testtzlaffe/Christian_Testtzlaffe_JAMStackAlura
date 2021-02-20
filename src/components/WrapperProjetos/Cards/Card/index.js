@@ -44,7 +44,7 @@ CardBase.Tags = styled.div`
 
 CardBase.Tag = styled.div`
   background-color: ${({ theme }) => theme.colors.primary.light.color};
-  color: ${({ theme }) => theme.colors.primary.main.contrastText};
+  color: ${({ theme }) => theme.colors.primary.light.contrastText};
   border-radius: ${({ theme }) => theme.borderRadiusButton};
   padding: 6px 12px;
   margin-right: 12px;
