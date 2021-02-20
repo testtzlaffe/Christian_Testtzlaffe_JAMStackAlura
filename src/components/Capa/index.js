@@ -9,18 +9,10 @@ export const Capa = () => {
     <CapaWrapper>
       <Foto src="https://avatars.githubusercontent.com/u/50345995?s=460&u=44aa87e4ff3d423b7bb0566ef035f0d48bac6b00&v=4" />
       <Text tag="h1" variant={{ xs: 'titleXS', md: 'title' }}>
-        Olá, sou Testtzlaffe
+        Olá, sou o Testtzlaffe
       </Text>
       <Text tag="h2" variant={{ xs: 'subTitleXS', md: 'subTitle' }}>
         Desenvolvimento Web
-      </Text>
-      <Text
-        tag="h2"
-        variant={{ xs: 'subTitle2XS', md: 'subTitle2' }}
-        marginTop={{ md: '40px' }}
-      >
-        Contador e estudante de programação. Atualmente aprendendo React,
-        Next.js e Node.js.
       </Text>
 
       <Button
