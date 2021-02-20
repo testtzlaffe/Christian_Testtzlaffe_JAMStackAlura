@@ -27,8 +27,8 @@ export const colors = {
   },
   secondary: {
     main: {
-      color: '#FFF8E6',
-      contrastText: '#000000',
+      color: '#444',
+      contrastText: '#e1e1e1',
     },
   },
   tertiary: {

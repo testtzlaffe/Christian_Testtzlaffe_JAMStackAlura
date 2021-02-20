@@ -7,11 +7,10 @@ const CardBase = styled.a`
   min-width: 400px;
   ${breakpointsMedia({
     md: css`
-      max-width: 320px;
+      max-width: 400px;
     `,
   })}
   margin: 20px;
-  border-radius: 20px;
   cursor: pointer;
   transition: ${({ theme }) => theme.transition};
   &:hover {
@@ -20,15 +19,19 @@ const CardBase = styled.a`
 `;
 
 CardBase.Image = styled.img`
-  max-width: 100%;
+  object-fit: cover;
+  height: 220px;
+  width: 400px;
 `;
 
-CardBase.Header = styled.div``;
+CardBase.Header = styled.div`
+  height: 220px;
+`;
 
 CardBase.Body = styled.div`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.secondary.main.color};
   padding: 20px;
-  color: ${({ theme }) => theme.colors.background.main.color};
+  color: ${({ theme }) => theme.colors.secondary.main.contrastText};
 `;
 
 CardBase.Title = styled.div`
@@ -36,7 +39,6 @@ CardBase.Title = styled.div`
 `;
 
 CardBase.Tags = styled.div`
-  background-color: white;
   display: flex;
 `;
 
@@ -45,7 +47,7 @@ CardBase.Tag = styled.div`
   color: ${({ theme }) => theme.colors.primary.main.contrastText};
   border-radius: ${({ theme }) => theme.borderRadiusButton};
   padding: 6px 12px;
-  margin-right: 4px;
+  margin-right: 12px;
 `;
 
 export const Card = ({ name, tags, img, ...props }) => {
