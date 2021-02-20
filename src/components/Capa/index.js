@@ -25,7 +25,7 @@ export const Capa = () => {
 
       <Button
         variant="primary.main"
-        padding={{ xs: '10px 32px', md: '10px 40px' }}
+        padding={{ xs: '10px 40px', md: '0 60px' }}
         marginTop={{ xs: '32px', md: '40px' }}
       >
         <ButtonLink

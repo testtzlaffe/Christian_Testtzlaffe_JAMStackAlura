@@ -17,8 +17,14 @@ const CardBase = styled.a`
   margin: 20px;
   cursor: pointer;
   transition: ${({ theme }) => theme.transition};
+  ${breakpointsMedia({
+    md: css`
+      opacity: 0.8;
+    `,
+  })}
   &:hover {
     transform: scale(1.05);
+    opacity: 1;
   }
 `;
 
@@ -36,6 +42,7 @@ CardBase.Header = styled.div`
 CardBase.Image = styled.img`
   object-fit: inherit;
   border-radius: ${borderRadiusCard} ${borderRadiusCard} 0 0;
+  opacity: inherit;
 
   ${breakpointsMedia({
     xs: css`

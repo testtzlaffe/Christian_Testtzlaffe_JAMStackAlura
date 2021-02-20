@@ -14,7 +14,8 @@ const projects = [
     name: 'INSTALURA',
     url: 'https://github.com/testtzlaffe/instalura-base',
     img:
-      'https://raw.githubusercontent.com/testtzlaffe/netfenix/master/src/assets/img/netfenix2.png',
+      'https://raw.githubusercontent.com/testtzlaffe/instalura-base/main/public/images/instalura.png',
+
     tags: ['React', 'Next.js'],
   },
 ];

@@ -7,10 +7,10 @@ export const LogoText = styled.a`
   display: flex;
   ${breakpointsMedia({
     xs: css`
-      font-size: 32px;
+      font-size: 28px;
     `,
     md: css`
-      font-size: 50px;
+      font-size: 44px;
     `,
   })}
   align-items: center;
