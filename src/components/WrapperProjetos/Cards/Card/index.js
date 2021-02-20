@@ -1,9 +1,13 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 import { Text } from '../../../Text';
+import { theme } from '../../../../theme';
+
+const borderRadiusCard = theme.borderRadiusCard;
 
 const CardBase = styled.a`
   text-decoration: none;
+  display: block;
   min-width: 400px;
   ${breakpointsMedia({
     md: css`
@@ -24,6 +28,7 @@ CardBase.Header = styled.div`
 
 CardBase.Image = styled.img`
   object-fit: cover;
+  border-radius: ${borderRadiusCard} ${borderRadiusCard} 0 0;
   height: 220px;
   width: 400px;
 `;
@@ -31,6 +36,7 @@ CardBase.Image = styled.img`
 CardBase.Body = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary.main.color};
   padding: 20px;
+  border-radius: 0 0 ${borderRadiusCard} ${borderRadiusCard};
   color: ${({ theme }) => theme.colors.secondary.main.contrastText};
 `;
 
