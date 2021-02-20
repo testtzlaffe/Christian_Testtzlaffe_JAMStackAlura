@@ -1,6 +1,6 @@
 export const typographyVariants = {
   title: {
-    fontSize: '32px',
+    fontSize: '30px',
     fontWeight: '400',
     lineHeight: '108px',
   },
@@ -12,13 +12,13 @@ export const typographyVariants = {
   },
 
   subTitle: {
-    fontSize: '64px',
+    fontSize: '60px',
     fontWeight: '700',
     lineHeight: '88px',
   },
 
   subTitleXS: {
-    fontSize: '24px',
+    fontSize: '26px',
     fontWeight: '700',
     lineHeight: '60px',
   },
@@ -26,13 +26,13 @@ export const typographyVariants = {
   subTitle2: {
     fontSize: '20px',
     fontWeight: '300',
-    lineHeight: '60px',
+    lineHeight: '32px',
   },
 
   subTitle2XS: {
     fontSize: '16px',
     fontWeight: '300',
-    lineHeight: '28px',
+    lineHeight: '26px',
   },
 
   paragraph1: {

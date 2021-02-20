@@ -11,13 +11,21 @@ export const Capa = () => {
       <Text tag="h1" variant={{ xs: 'titleXS', md: 'title' }}>
         Olá, sou o Testtzlaffe
       </Text>
-      <Text tag="h2" variant={{ xs: 'subTitleXS', md: 'subTitle' }}>
+      <Text
+        tag="h2"
+        variant={{ xs: 'subTitleXS', md: 'subTitle' }}
+        marginBottom={{ xs: '8px', md: '28px' }}
+      >
         Desenvolvimento Web
+      </Text>
+      <Text tag="h3" variant={{ xs: 'subTitle2XS', md: 'subTitle2' }}>
+        Formado em Ciências Contábeis pela UFES, me apaixonando pela
+        programação. Atualmente aprendendo React, Next.js e Node.js.
       </Text>
 
       <Button
         variant="primary.main"
-        padding={{ xs: '10px 40px', md: '0 60px' }}
+        padding={{ xs: '10px 40px', md: '10px 60px' }}
         marginTop={{ xs: '32px', md: '40px' }}
       >
         <ButtonLink

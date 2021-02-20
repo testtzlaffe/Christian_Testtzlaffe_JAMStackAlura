@@ -32,7 +32,7 @@ export const Logo = () => {
       <Text
         tag="span"
         variant={{ xs: 'paragraph1XS', md: 'paragraph1' }}
-        marginLeft="12px"
+        marginLeft="6px"
         display={{ xs: 'none', md: 'block' }}
       >
         /testtzlaffe

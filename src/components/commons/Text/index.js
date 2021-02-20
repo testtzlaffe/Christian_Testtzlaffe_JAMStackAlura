@@ -24,6 +24,7 @@ const TextBase = styled.span`
   ${propToStyle('margin')}
   ${propToStyle('marginLeft')}
   ${propToStyle('marginTop')}
+  ${propToStyle('marginBottom')}
   ${propToStyle('display')}
 `;
 
