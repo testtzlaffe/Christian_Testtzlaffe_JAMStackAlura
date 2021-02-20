@@ -6,13 +6,13 @@ export const typographyVariants = {
   },
 
   titleXS: {
-    fontSize: '40px',
+    fontSize: '20px',
     fontWeight: '400',
     lineHeight: '88px',
   },
 
   subTitle: {
-    fontSize: '80px',
+    fontSize: '60px',
     fontWeight: '400',
     lineHeight: '88px',
   },
@@ -42,13 +42,13 @@ export const typographyVariants = {
   },
 
   paragraph1XS: {
-    fontSize: '28px',
+    fontSize: '20px',
     fontWeight: '400',
     lineHeight: '22px',
   },
 
   paragraph2: {
-    fontSize: '32px',
+    fontSize: '18px',
     fontWeight: '700',
     lineHeight: '38px',
   },

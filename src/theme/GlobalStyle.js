@@ -23,7 +23,6 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     display: flex;
     min-height: 100vh;
-    min-height: -webkit-fill-available;
     width: 100%;
   }
 
