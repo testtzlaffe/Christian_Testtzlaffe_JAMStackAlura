@@ -9,7 +9,7 @@ export const Capa = () => {
     <CapaWrapper>
       <Foto src="https://avatars.githubusercontent.com/u/50345995?s=460&u=44aa87e4ff3d423b7bb0566ef035f0d48bac6b00&v=4" />
       <Text tag="h1" variant={{ xs: 'titleXS', md: 'title' }}>
-        Olá, sou o Testtzlaffe
+        Olá, sou o Christian
       </Text>
       <Text
         tag="h2"
