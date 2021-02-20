@@ -8,10 +8,10 @@ const borderRadiusCard = theme.borderRadiusCard;
 const CardBase = styled.a`
   text-decoration: none;
   display: block;
-  min-width: 400px;
+  min-width: 320px;
   ${breakpointsMedia({
     md: css`
-      max-width: 400px;
+      max-width: 320px;
     `,
   })}
   margin: 20px;
@@ -23,14 +23,14 @@ const CardBase = styled.a`
 `;
 
 CardBase.Header = styled.div`
-  height: 220px;
+  height: 180px;
 `;
 
 CardBase.Image = styled.img`
   object-fit: cover;
   border-radius: ${borderRadiusCard} ${borderRadiusCard} 0 0;
-  height: 220px;
-  width: 400px;
+  height: 180px;
+  width: 320px;
 `;
 
 CardBase.Body = styled.div`
