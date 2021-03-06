@@ -10,7 +10,7 @@ const InputWrapper = styled.div`
 const Input = styled(Text)`
   width: 100%;
   border: 1px solid ${({ theme }) => theme.colors.tertiary.light.color};
-  padding: 12px 16px;
+  padding: 6px 12px;
   outline: 0;
   border-radius: ${({ theme }) => theme.borderRadiusCard};
 `;
@@ -20,10 +20,11 @@ Input.defaultProps = {
   variant: 'paragraph1',
 };
 
-export function TextField({ placeholder, name, onChange, value }) {
+export function TextField({ placeholder, tag, name, onChange, value }) {
   return (
     <InputWrapper>
       <Input
+        tag={tag}
         type="text"
         placeholder={placeholder}
         name={name}

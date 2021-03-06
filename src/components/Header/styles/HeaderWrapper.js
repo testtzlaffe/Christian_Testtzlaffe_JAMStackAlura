@@ -20,6 +20,6 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 `;

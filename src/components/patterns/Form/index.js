@@ -47,7 +47,6 @@ export function Form(props) {
     })
       .then((response) => {
         if (response.ok) {
-          console.log(response.status);
           return response.json();
         }
 
@@ -61,12 +60,12 @@ export function Form(props) {
         setTimeout(() => {
           props.onClose();
           props.resetHasFormSubmited();
-        }, 5000);
+        }, 3000);
       })
       .catch((error) => {
         setSubmissionStatus(formStates.ERROR);
 
-        console.log(error);
+        console.error(error);
       });
   }
 
@@ -79,9 +78,9 @@ export function Form(props) {
   return (
     <FormWrapper>
       <form onSubmit={handleSubmit}>
-        <Text tag="p" variant="paragraph1">
+        {/* <Text tag="p" variant="paragraph1">
           Nome:
-        </Text>
+        </Text> */}
         <TextField
           placeholder="Nome"
           name="name"
@@ -89,9 +88,9 @@ export function Form(props) {
           value={formInfo.name}
         />
 
-        <Text tag="p" variant="paragraph1">
+        {/* <Text tag="p" variant="paragraph1">
           E-mail:
-        </Text>
+        </Text> */}
         <TextField
           placeholder="E-mail"
           name="email"
@@ -99,10 +98,11 @@ export function Form(props) {
           value={formInfo.email}
         />
 
-        <Text tag="p" variant="paragraph1">
+        {/* <Text tag="p" variant="paragraph1">
           Mensagem:
-        </Text>
+        </Text> */}
         <TextField
+          tag="textarea"
           placeholder="Mensagem"
           name="message"
           onChange={handleChange}
@@ -122,10 +122,6 @@ export function Form(props) {
           </Text>
         </Button>
       </form>
-
-      {submissionStatus === formStates.DONE && (
-        <div>OK, enviado com sucesso</div>
-      )}
     </FormWrapper>
   );
 }

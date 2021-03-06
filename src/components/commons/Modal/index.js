@@ -1,7 +1,10 @@
+import { useEffect, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Lottie } from '@crello/react-lottie';
-import successAnimation from './animations/success.json';
+import successAnimation1 from './animations/success1.json';
+import successAnimation2 from './animations/success2.json';
+import successAnimation3 from './animations/success3.json';
 
 const up = keyframes`
   from {
@@ -37,7 +40,7 @@ const SafeArea = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
-  background-color: #222;
+  background-color: ${({ theme }) => theme.colors.background.light.color};
   border-radius: ${({ theme }) => theme.borderRadiusCard}
     ${({ theme }) => theme.borderRadiusCard} 0 0;
 
@@ -50,13 +53,36 @@ const SafeArea = styled.div`
   }}
 `;
 
-export function Modal({
-  isOpen,
-  onClose,
-  children,
-  hasFormSubmited,
-  resetHasFormSubmited,
-}) {
+const SuccessAnimation = styled.div`
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
+
+export function Modal({ isOpen, onClose, children, hasFormSubmited }) {
+  const [animation, setAnimation] = useState(successAnimation1);
+  const [animationLength, setAnimationLength] = useState(200);
+  const [animationSpeed, setAnimationSpeed] = useState(2);
+
+  useEffect(() => {
+    const randomNumber = Math.ceil(Math.random() * 3);
+
+    if (randomNumber > 2) {
+      setAnimation(successAnimation3);
+      setAnimationLength(250);
+      setAnimationSpeed(1.1);
+    } else if (randomNumber > 1) {
+      setAnimation(successAnimation2);
+      setAnimationLength(600);
+      setAnimationSpeed(0.7);
+    } else {
+      setAnimation(successAnimation1);
+      setAnimationLength(200);
+      setAnimationSpeed(2);
+    }
+  }, [isOpen]);
+
   return (
     <ModalWrapper
       isOpen={isOpen}
@@ -69,20 +95,19 @@ export function Modal({
       }}
     >
       {hasFormSubmited && (
-        <div>
-          <div>
-            <Lottie
-              width="250px"
-              height="250px"
-              className="lottie-container basic"
-              config={{
-                animationData: successAnimation,
-                loop: false,
-                autoplay: true,
-              }}
-            />
-          </div>
-        </div>
+        <SuccessAnimation>
+          <Lottie
+            width={`${animationLength}px`}
+            height={`${animationLength}px`}
+            speed={animationSpeed}
+            className="lottie-container basic"
+            config={{
+              animationData: animation,
+              loop: false,
+              autoplay: true,
+            }}
+          />
+        </SuccessAnimation>
       )}
 
       {!hasFormSubmited && (
