@@ -17,7 +17,7 @@ const up = keyframes`
 `;
 
 const ModalWrapper = styled.div`
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   display: flex;
   justify-content: center;
