@@ -1,5 +1,7 @@
 import styled, { css, keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
+import { Lottie } from '@crello/react-lottie';
+import successAnimation from './animations/success.json';
 
 const up = keyframes`
   from {
@@ -32,11 +34,12 @@ const ModalWrapper = styled.div`
 `;
 
 const SafeArea = styled.div`
-  border: 1px solid yellow;
-  background-color: white;
   display: flex;
   justify-content: center;
   padding: 40px;
+  background-color: #222;
+  border-radius: ${({ theme }) => theme.borderRadiusCard}
+    ${({ theme }) => theme.borderRadiusCard} 0 0;
 
   ${({ isOpen }) => {
     if (isOpen) {
@@ -47,7 +50,13 @@ const SafeArea = styled.div`
   }}
 `;
 
-export function Modal({ isOpen, onClose, children }) {
+export function Modal({
+  isOpen,
+  onClose,
+  children,
+  hasFormSubmited,
+  resetHasFormSubmited,
+}) {
   return (
     <ModalWrapper
       isOpen={isOpen}
@@ -55,12 +64,32 @@ export function Modal({ isOpen, onClose, children }) {
         const isSafeArea = event.target.closest('[data-safe-area="true"]');
         if (!isSafeArea) {
           onClose();
+          // resetHasFormSubmited();
         }
       }}
     >
-      <SafeArea isOpen={isOpen} data-safe-area="true">
-        {children()}
-      </SafeArea>
+      {hasFormSubmited && (
+        <div>
+          <div>
+            <Lottie
+              width="250px"
+              height="250px"
+              className="lottie-container basic"
+              config={{
+                animationData: successAnimation,
+                loop: false,
+                autoplay: true,
+              }}
+            />
+          </div>
+        </div>
+      )}
+
+      {!hasFormSubmited && (
+        <SafeArea isOpen={isOpen} data-safe-area="true">
+          {children()}
+        </SafeArea>
+      )}
     </ModalWrapper>
   );
 }

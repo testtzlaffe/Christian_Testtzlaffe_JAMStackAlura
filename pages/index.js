@@ -9,6 +9,8 @@ import { Form } from '../src/components/patterns/Form';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [hasFormSubmited, setHasFormSubmited] = useState(false);
+
   return (
     <>
       <Header />
@@ -17,8 +19,22 @@ export default function Home() {
         <WrapperProjects />
       </Container>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        {(modalProps) => <Form modalProps={modalProps} />}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        hasFormSubmited={hasFormSubmited}
+      >
+        {(modalProps) => (
+          <Form
+            modalProps={modalProps}
+            onSubmitForm={() => setHasFormSubmited(true)}
+            onClose={() => {
+              setIsModalOpen(false);
+              setHasFormSubmited(false);
+            }}
+            resetHasFormSubmited={() => setHasFormSubmited(false)}
+          />
+        )}
       </Modal>
 
       <Footer />

@@ -22,6 +22,15 @@ export const Button = styled.button`
   padding: 12px 26px;
   font-weight: bold;
   opacity: 1;
+
+  ${({ fullWidth }) => {
+    if (fullWidth) {
+      return css`
+        width: 100%;
+      `;
+    }
+  }}
+
   border-radius: ${({ theme }) => theme.borderRadiusButton};
 
   ${({ ghost }) => (ghost ? ButtonGhost : ButtonDefault)}
@@ -39,7 +48,17 @@ export const Button = styled.button`
       md: theme.typographyVariants.paragraph1,
     })}
 
+  ${({ disabled }) => {
+    if (disabled) {
+      return css`
+        background-color: #444;
+        cursor: not-allowed;
+      `;
+    }
+  }}
+
   ${propToStyle('marginTop')}
   ${propToStyle('padding')}
   ${propToStyle('display')}
+  ${propToStyle('disabled')}
 `;
